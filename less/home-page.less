@@ -90,21 +90,46 @@
     .content-section {
       .flexStatus (column, center, center);
 
-      @textContactWidth: 100%;
-      @imgContentWidth: 100%;
+      
 
       .mobileSet {
-        order: -1;
+        order: 1;
       }
       .text-content {
-        padding-right: 0;
+        margin-top: 1%;
+        padding: 0 0 0 0;
+        width: 100%;
       }
   
       .img-content {
-        padding-left: 0;
+        margin-top: 1%;
+        padding: 0 0 0 0;
+        width: 100%;
+        text-align: center;
       }
 
     }
+
+    .content-destination {
+      width: 100%;
+      
+    }
+
+    .content-pick {
+      .flexStatus (column, center, center);
+
+      .destination {
+        width: 75%;
+      }
+    }
+  }  
+  
+  @media @mobile  {
+    .content-section .img-content {
+      text-align: left;
+    }
   }
+
+  
 
 }// home
