@@ -1,1 +1,31 @@
-// Navigation Styles here
+.top-nav {
+    height: 10%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    .flexStatus(row, space-between, center);
+
+    h1 {
+        width: 60%;
+    }
+
+    ul {
+        width: 40%;
+        .flexStatus(row, space-evenly, center);
+        li a {
+        text-decoration: none;
+        color: @font-color;
+        line-height: 1.5;
+        font-size: 1.6rem;
+        font-weight: bold;
+        
+        &:hover {
+            cursor: pointer;
+            color: @button-bg;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+        }
+
+
+        }
+    }
+}
