@@ -1,8 +1,9 @@
 .top-nav {
     height: 10%;
     margin-top: 5%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     .flexStatus(row, space-between, center);
+    
 
     h1 {
         width: 60%;
@@ -26,6 +27,21 @@
         }
 
 
+        }
+    }
+
+
+
+
+    @media @mobile {
+        .flexStatus (column, space-between, center);
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+        ul {
+            width: 100%;
+            margin-top: 2%;
         }
     }
 }
