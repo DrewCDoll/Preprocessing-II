@@ -20,8 +20,7 @@
         font-weight: bold;
         
         &:hover {
-            cursor: pointer;
-            color: @button-bg;
+            .hoverEffect (pointer, @button-bg);
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
         }
@@ -30,7 +29,15 @@
         }
     }
 
+    @media @tablet {
+        h1 {
+            width: 40%;
+        }
 
+        ul {
+            width: 60%;
+        }
+    }
 
 
     @media @mobile {

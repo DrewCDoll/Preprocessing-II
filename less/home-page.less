@@ -84,7 +84,44 @@
         .btn (@btn-bg);
       } 
     }
-  }  
+  } 
+  
+  .bookings {
+    width: 100%;
+    margin: 0 auto;
+    
+    .bookingForm {
+      width: 75%;
+      margin: 0 auto;
+      .flexStatus (row, center, center);
+      flex-wrap: wrap;
+      
+      .bookingFormInputs {
+        width: 49%;
+        text-align: center;
+        padding-bottom: 3%;
+      }
+
+      .bookingFormSpecialInputs {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 4%;
+        
+        .packageName {
+          font-family: 'Indie Flower', cursive;
+          font-size: 2rem;
+          
+        }
+        
+        .submitBtn {
+          .btn(@btn-bg);
+        }
+      }
+
+
+    }
+  }
   
   @media @tablet {
     .content-section {
@@ -121,6 +158,10 @@
       .destination {
         width: 75%;
       }
+    }
+
+    .bookings .bookingForm {
+      .flexStatus (column, flex-start, center);
     }
   }  
   

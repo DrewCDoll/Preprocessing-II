@@ -84,6 +84,41 @@
         <button class="btn">Sign Me Up!</button>
       </div>
     </section>
+
+    <section class="container bookings">
+      <form class="bookingForm" action="https://formspree.io/mvoovqgz" method="post">
+        <div class="bookingFormInputs">
+          <h4>First Name:</h4>
+          <input type="text" name="fName">
+        </div>
+        <div class="bookingFormInputs">
+          <h4>Last Name:</h4>
+          <input type="text" name="lName">
+        </div>
+        <div class="bookingFormInputs">
+          <h4>Email:</h4>
+          <input type="email" name="email">
+        </div>
+        <div class="bookingFormInputs">  
+          <h4>Phone:</h4>
+          <input type="text" name="phone">
+        </div>
+        <div class="bookingFormSpecialInputs">
+          <h4>Please select the package(s) you are interested in:</h4>
+          <input type="checkbox" name="vaca1" value="fis"><span class="packageName">Fun in the Sun</span>
+          <input type="checkbox" name="vaca2" value="me"><span class="packageName">Mountain Excursion</span>
+          <input type="checkbox" name="vaca3" value="ig"><span class="packageName">Island Getaway</span>
+        </div>
+        <div class="bookingFormSpecialInputs">
+          <h4>Any Special Instructions?</h4>
+          <textarea class="txtarea" row="10" columns="80"></textarea>
+        </div>
+        <div class="bookingFormSpecialInputs">
+          <input type="submit" class="submitBtn" value="Please Press Here">
+        </div>
+
+      </form>
+    </section>
   </div><!-- container -->
 
   <footer class="footer">

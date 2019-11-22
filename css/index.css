@@ -167,6 +167,7 @@ img {
 .container {
   max-width: 800px;
   width: 100%;
+  height: fit-content;
   margin: 0 auto;
 }
 @media (max-width: 760px) {
@@ -204,6 +205,14 @@ img {
   cursor: pointer;
   color: #17A2B8;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media (max-width: 760px) {
+  .top-nav h1 {
+    width: 40%;
+  }
+  .top-nav ul {
+    width: 60%;
+  }
 }
 @media (max-width: 500px) {
   .top-nav {
@@ -310,6 +319,45 @@ img {
 .home .content-pick .destination button:hover {
   background-color: #005a5a;
 }
+.home .bookings {
+  width: 100%;
+  margin: 0 auto;
+}
+.home .bookings .bookingForm {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home .bookings .bookingForm .bookingFormInputs {
+  width: 49%;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.home .bookings .bookingForm .bookingFormSpecialInputs {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 4%;
+}
+.home .bookings .bookingForm .bookingFormSpecialInputs .packageName {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+}
+.home .bookings .bookingForm .bookingFormSpecialInputs .submitBtn {
+  padding: 1rem 6rem;
+  border-radius: 10px;
+  width: 90%;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+.home .bookings .bookingForm .bookingFormSpecialInputs .submitBtn:hover {
+  background-color: #005a5a;
+}
 @media (max-width: 760px) {
   .home .content-section {
     display: flex;
@@ -342,6 +390,12 @@ img {
   }
   .home .content-pick .destination {
     width: 75%;
+  }
+  .home .bookings .bookingForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 @media (max-width: 500px) {
