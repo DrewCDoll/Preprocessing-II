@@ -15,11 +15,31 @@
 </head>
 
 <body>
+  <nav class="container top-nav">
+    <h1>Fun Bus</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
 
-  
-     
+
+  </nav>
+
   <div class="container home">
-   
+    <header class="pageHeader"> 
+      <span class="fullWidthBar"> </span>
+      <div class="fullWidthImg">
+        <img src="img/fun-bus.jpg" alt="Welcome to Fun Bus!">
+      </div>
+      <div class="text-intro">
+        <h2>Welcome to Fun Bus!</h2>
+        <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+      </div>
+
+
+    </header>  
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -31,7 +51,7 @@
       </div>
     </section>
     <section class="content-section inverse-content">
-      <div class="img-content">
+      <div class="img-content  mobileSet">
           <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
       <div class="text-content">
@@ -51,18 +71,53 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
+    </section>
+
+    <section class="container bookings">
+      <form class="bookingForm" action="https://formspree.io/mvoovqgz" method="post">
+        <div class="bookingFormInputs">
+          <h4>First Name:</h4>
+          <input type="text" name="fName">
+        </div>
+        <div class="bookingFormInputs">
+          <h4>Last Name:</h4>
+          <input type="text" name="lName">
+        </div>
+        <div class="bookingFormInputs">
+          <h4>Email:</h4>
+          <input type="email" name="email">
+        </div>
+        <div class="bookingFormInputs">  
+          <h4>Phone:</h4>
+          <input type="text" name="phone">
+        </div>
+        <div class="bookingFormSpecialInputs">
+          <h4>Please select the package(s) you are interested in:</h4>
+          <input type="checkbox" name="vaca1" value="fis"><span class="packageName">Fun in the Sun</span>
+          <input type="checkbox" name="vaca2" value="me"><span class="packageName">Mountain Excursion</span>
+          <input type="checkbox" name="vaca3" value="ig"><span class="packageName">Island Getaway</span>
+        </div>
+        <div class="bookingFormSpecialInputs">
+          <h4>Any Special Instructions?</h4>
+          <textarea class="txtarea" row="10" columns="80"></textarea>
+        </div>
+        <div class="bookingFormSpecialInputs">
+          <input type="submit" class="submitBtn" value="Please Press Here">
+        </div>
+
+      </form>
     </section>
   </div><!-- container -->
 

@@ -1,1 +1,54 @@
-// Navigation Styles here
+.top-nav {
+    height: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    .flexStatus(row, space-between, center);
+    
+
+    h1 {
+        width: 60%;
+    }
+
+    ul {
+        width: 40%;
+        .flexStatus(row, space-evenly, center);
+        li a {
+        text-decoration: none;
+        color: @font-color;
+        line-height: 1.5;
+        font-size: 1.6rem;
+        font-weight: bold;
+        
+        &:hover {
+            .hoverEffect (pointer, @button-bg);
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+        }
+
+
+        }
+    }
+
+    @media @tablet {
+        h1 {
+            width: 40%;
+        }
+
+        ul {
+            width: 60%;
+        }
+    }
+
+
+    @media @mobile {
+        .flexStatus (column, space-between, center);
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+        ul {
+            width: 100%;
+            margin-top: 2%;
+        }
+    }
+}

@@ -1,5 +1,28 @@
 .home {
 
+  .pageHeader {
+    .flexStatus (column, space-around, flex-start);
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+
+    .fullWidthBar {
+      margin: 0 -9999rem;
+      border-bottom: 2px dashed @navigation-border;
+      padding: 0.25rem 9999rem;
+    }
+
+    .fullWidthImg {
+      width: 100%;
+      padding-bottom: 2%;
+    }
+
+    .text-intro {
+      width: 100%;
+      margin-bottom: 2%;
+    }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -9,12 +32,12 @@
    
     
     .text-content {
-      width: 48%;
+      width: @textContentWidth;
       padding-right: 1%;
     }
 
     .img-content {
-      width: 48%;
+      width: @imgContentWidth;
       padding-left: 1%;
 
       img {
@@ -56,6 +79,98 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      button {
+        .btn (@btn-bg);
+      } 
+    }
+  } 
+  
+  .bookings {
+    width: 100%;
+    margin: 0 auto;
+    
+    .bookingForm {
+      width: 75%;
+      margin: 0 auto;
+      .flexStatus (row, center, center);
+      flex-wrap: wrap;
+      
+      .bookingFormInputs {
+        width: 49%;
+        text-align: center;
+        padding-bottom: 3%;
+      }
+
+      .bookingFormSpecialInputs {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 4%;
+        
+        .packageName {
+          font-family: 'Indie Flower', cursive;
+          font-size: 2rem;
+          
+        }
+        
+        .submitBtn {
+          .btn(@btn-bg);
+        }
+      }
+
+
     }
   }
+  
+  @media @tablet {
+    .content-section {
+      .flexStatus (column, center, center);
+
+      
+
+      .mobileSet {
+        order: 1;
+      }
+      .text-content {
+        margin-top: 1%;
+        padding: 0 0 0 0;
+        width: 100%;
+      }
+  
+      .img-content {
+        margin-top: 1%;
+        padding: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+
+    .content-destination {
+      width: 100%;
+      
+    }
+
+    .content-pick {
+      .flexStatus (column, center, center);
+
+      .destination {
+        width: 75%;
+      }
+    }
+
+    .bookings .bookingForm {
+      .flexStatus (column, flex-start, center);
+    }
+  }  
+  
+  @media @mobile  {
+    .content-section .img-content {
+      text-align: left;
+    }
+  }
+
+  
+
 }// home
